@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Rental</title>
+  </head>
+  <body>
+    <h1>ACME Car Rental</h1>
+    <p>
+      <label for="pickUpDate"
+        >Pick up date: <input id="pickUpDate2" type="date"
+      /></label>
+    </p>
+    <p>
+      <label for="numDays"
+        >Number of days: <input id="numDays2" type="number"
+      /></label>
+    </p>
+    <br />
+    <fieldset>
+      <legend>Options:</legend>
+      <input
+        type="checkbox"
+        id="tollTag"
+        name="tollTag"
+        value="tollTag"
+        checked
+      />
+      <label for="tollTag">Electronic Toll Tag ($3.95/day)</label>
+      <br />
+      <input type="checkbox" id="gps" name="gps" value="gps" checked />
+      <label for="gps">GPS ($2.95/day)</label>
+      <br />
+      <input
+        type="checkbox"
+        id="roadside"
+        name="roadside"
+        value="roadside"
+        checked
+      />
+      <label for="roadside">Roadside Assistance ($2.95/day)</label>
+      <br />
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Under 25:</legend>
+      <input type="radio" id="no" name="radio" value="no" checked /> No
+      <input type="radio" id="yes" name="radio" value="yes" checked /> Yes
+    </fieldset>
+    <br />
+    <button id="estimateBtn">Estimate Total Cost</button>
+    <table>
+        <tr>
+            <td>Car rental:</td>
+            <td id="carRentalTA"></td>
+        </tr>
+        <br>
+        <tr>
+            <td>Options: </td>
+            <td id="optionsTA"></td>
+        </tr>
+        <br>
+        <tr>
+            <td>Under 25 surcharge: </td>
+            <td id="underAge"></td>
+        </tr>
+        <br>
+        <tr>
+            <td>Total due: </td>
+            <td id="totalDue"></td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>
