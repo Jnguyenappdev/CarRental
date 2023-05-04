@@ -16,7 +16,7 @@
       /></label>
     </p>
     <br />
-    <fieldset>
+    <fieldset style="border: none;">
       <legend>Options:</legend>
       <input
         type="checkbox"
@@ -41,33 +41,31 @@
       <br />
     </fieldset>
     <br />
-    <fieldset>
+    <fieldset style="border: none;">
       <legend>Under 25:</legend>
       <input type="radio" id="no" name="radio" value="no" checked /> No
       <input type="radio" id="yes" name="radio" value="yes" checked /> Yes
     </fieldset>
     <br />
     <button id="estimateBtn">Estimate Total Cost</button>
-    <table>
-        <tr>
-            <td>Car rental:</td>
-            <td id="carRentalTA"></td>
-        </tr>
-        <br>
-        <tr>
-            <td>Options: </td>
-            <td id="optionsTA"></td>
-        </tr>
-        <br>
-        <tr>
-            <td>Under 25 surcharge: </td>
-            <td id="underAge"></td>
-        </tr>
-        <br>
-        <tr>
-            <td>Total due: </td>
-            <td id="totalDue"></td>
-        </tr>
+    <br />
+    <table style="text-align: end">
+      <tr>
+        <td >Car rental:</td>
+        <td id="carRentalTA"></td>
+      </tr>
+      <tr>
+        <td>Options:</td>
+        <td id="optionsTA"></td>
+      </tr>
+      <tr>
+        <td id="hiddenbox">Under 25 surcharge:</td>
+        <td id="underAge"></td>
+      </tr>
+      <tr>
+        <td>Total due:</td>
+        <td id="totalDue"></td>
+      </tr>
     </table>
     <script src="index.js"></script>
   </body>
